@@ -16,12 +16,13 @@ h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 8em;
   font-weight: 900;
-  margin: 0px;
+  margin-top: -56px;
+  margin-bottom: 0px;
 }
 
 .large {
   font-size: 36px;
-  margin-top: -16px;
+  margin-top: -6px;
 }
 
 .overlay {
@@ -39,7 +40,8 @@ h1 {
   z-index: 2000;
   position: absolute;
   text-align: center;
-
+  width: 100%;
+  margin: 0.5em;
   top: 25%;
   left: 0px;
   bottom: 0px;
