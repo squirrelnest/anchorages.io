@@ -6,6 +6,7 @@
     <meta charset='utf-8' />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
     <script src="js/jqBootstrapValidation.js"></script>
@@ -15,22 +16,28 @@
 
   <body>
 
-    <div class="bg-img">
+    <div class="header">
 
-      <div class="header">
+      <h1>YARRBLE</h1>
+      <p class="large">Local knowledge, worldwide. It's like Yelp for anchorages.</p>
+      <p>Hey there, sailor! Looking for a great place to drop the hook? Or know about one? Sign up for our beta!</p>
 
-        <h1>ANCHORAGES</h1>
-        <p>A reviews site for anchorages</p>
+      <form>
+        <input type="text" id="email" name="email" value="" placeholder="Your email">
+        <input type="textarea" id="message" name="message" value="" placeholder="Your message to the developers">
+        <input type="submit" name="submit" value="I want the app!">
+      </form>
 
-        <form>
-          <input type="text" id="email" name="email" value="email">
-          <input type="textarea" id="message" name="message" value="message">
-          <input type="submit" name="submit" value="submit">
-        </form>
-
+      <div class="alert alert-success">
       </div>
 
     </div>
+
+    <div class="overlay">
+    </div>
+    <div class="bg-img">
+    </div>
+
 
   </body>
 </html>

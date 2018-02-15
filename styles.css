@@ -3,22 +3,43 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   color: white;
 }
 
+p {
+  font-size: 1.5em;
+}
+
 h1 {
-  font-size: 150px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8em;
   font-weight: 900;
   margin: 0px;
 }
 
-.header {
-  position: absolute;
-  display: block;
-  text-align: center;
+.large {
+  font-size: 36px;
+  margin-top: -16px;
+}
+
+.overlay {
+  z-index: 1000;
+  position: fixed;
   width: 100%;
   height: 100%;
+	top: 0px;
+	right: 0px;
+  background-image: linear-gradient(to bottom right,#f4429b,#0ec3d3);
+	opacity: 0.5;
+}
+
+.header {
+  z-index: 2000;
+  position: absolute;
+  text-align: center;
+
   top: 25%;
   left: 0px;
   bottom: 0px;
@@ -37,20 +58,37 @@ h1 {
 }
 
 .bg-img {
+  z-index: 0;
   position: relative;
   width: 100%;
   height: 100%;
   background: url('img/linapacan.png') center center no-repeat;
   background-size: cover;
+}
 
-  &:before {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-	opacity: 1;
-  }
+input[type*="text"], select {
+    font-size: 1em;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-size: 1em;
+    width: 25%;
+    background-color: #f78f62;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #f47741;
 }
