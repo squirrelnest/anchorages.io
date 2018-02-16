@@ -12,7 +12,7 @@ $(function() {
             // get values from FORM
             var email = $("input#email").val();
             var message = $("input#message").val();
-            var _subject = $("input#_subject").val();
+            var subject = $("input#subject").val();
             // increment id
             id += 1;
 
@@ -22,7 +22,7 @@ $(function() {
                 type: "POST",
                 dataType: "json",
                 data: {
-                  _subject: `${_subject} #${id}`,
+                  _subject: `${subject} #${id}`,
                     email: email,
                     message: message,
                     id: id
