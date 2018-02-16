@@ -96,8 +96,7 @@ input[type=submit]:hover {
 
 .alert-success {
   font-family: 'Roboto', sans-serif;
-  color: #f78f62;
-  background: white;
+  color: white;
 }
 
 #closeBtn {
