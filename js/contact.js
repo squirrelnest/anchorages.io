@@ -1,3 +1,5 @@
+var id = 0;
+
 $(function() {
 
     $("input,textarea").jqBootstrapValidation({
@@ -10,6 +12,9 @@ $(function() {
             // get values from FORM
             var email = $("input#email").val();
             var message = $("input#message").val();
+            var _subject = $("input#_subject").val();
+            // increment id
+            id += 1;
 
             // Post to Formspree
             $.ajax({
@@ -17,8 +22,10 @@ $(function() {
                 type: "POST",
                 dataType: "json",
                 data: {
+                  _subject: `${_subject} #${id}`,
                     email: email,
-                    message: message
+                    message: message,
+                    id: id
                 },
                 cache: false,
                 success: function() {
