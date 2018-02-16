@@ -93,3 +93,9 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #f47741;
 }
+
+.alert-success {
+  font-family: 'Roboto', sans-serif;
+  color: #f78f62;
+  background: white;
+}
