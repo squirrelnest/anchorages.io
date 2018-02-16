@@ -9,7 +9,7 @@ $(function() {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var email = $("input#email").val();
-            var message = $("textarea#message").val();
+            var message = $("input#message").val();
 
             // Post to Formspree
             $.ajax({
