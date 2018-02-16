@@ -24,7 +24,7 @@ $(function() {
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' onclick='closeMessage()' data-dismiss='alert' aria-hidden='true'>&times;")
+                    $('#success > .alert-success').html("<button type='button' id='closeBtn' onclick='closeMessage()' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
                         .append("<strong>Thanks for getting in touch! We will let you know when the beta is ready.</strong>");
