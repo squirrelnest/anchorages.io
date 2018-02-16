@@ -95,6 +95,7 @@ input[type=submit]:hover {
 }
 
 .alert-success {
+  margin-top: 1em;
   font-family: 'Roboto', sans-serif;
   color: white;
 }
